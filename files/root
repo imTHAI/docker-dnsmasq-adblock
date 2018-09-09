@@ -1,0 +1,1 @@
+25	16	*	*	*	/sbin/list_update.sh >> /dev/stdout
