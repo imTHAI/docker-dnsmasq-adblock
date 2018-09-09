@@ -1,1 +1,1 @@
-25	16	*	*	*	/sbin/list_update.sh >> /dev/stdout
+00 17	*	*	*	/sbin/list_update.sh >> /dev/stdout
