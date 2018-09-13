@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#cible=192.168.12.3
-cible=78.248.142.78
+cible=192.168.0.1
 
 #
 # Download the list of domains and the list of hostnames maintained by 
