@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domain
 sed -i.bak -e "/::/d" domains.txt hostnames.txt
 sed -i.bak -e "s/0.0.0.0/$cible/g" domains.txt hostnames.txt
 
-# Whiteliste of some domains:
+# Whitelist of some domains:
 echo "To whitelist some domains.."
 for domain in `cat whitelist` ; do sed -i "/$domain/d" *.txt ; done
 
