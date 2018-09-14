@@ -4,6 +4,7 @@ LABEL description="dnsmasq + adblock list under Alpine"
 
 RUN 	apk --update upgrade \
 	&& apk add --no-cache dnsmasq tzdata
+	&& touch /adblock/domains.txt /adblock/hostnames.txt
 
 COPY files/dnsmasq.conf /etc/dnsmasq.conf
 COPY files/dnsmasq_resolv.conf /etc/dnsmasq_resolv.conf
