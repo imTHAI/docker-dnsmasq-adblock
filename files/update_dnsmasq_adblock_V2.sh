@@ -17,7 +17,7 @@ sed -i.bak -e "s/0.0.0.0/$cible/g" domains.txt hostnames.txt
 
 # Whitelist of some domains:
 echo "To whitelist some domains.."
-for domain in `cat whitelist` ; do sed -i "/$domain/d" *.txt ; done
+for domain in `cat whitelist` ; do sed -i.bak "/$domain/d" *.txt ; done
 
 # Add some domains
 for domain in `cat myadd` ; do echo "address=/$domain/$cible" >> domains.txt ; done
