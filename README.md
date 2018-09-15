@@ -20,7 +20,7 @@ What I suggest:
 `wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt`
 `wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt`
 3. Run the container: `docker run -d --dns-adblock test --cap-add=NET_ADMIN -p 53:53/udp -v ~/adblock:/adblock -v /etc/localtime:/etc/localtime docker trickyboy/dnsmasq-adblock`
-4. It would be nice to schedule a daily download of the 2 files to be up-to-date with the adblock lists.
+4. It would be a good idea to schedule a daily download of the 2 files to keep the adblock list up-to-date.
 5. Also I combine this dns-adblock with a pixelserv-tls server ( see my other repo on docker hub). 
 
 
