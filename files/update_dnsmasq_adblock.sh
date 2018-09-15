@@ -12,9 +12,12 @@ wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostna
 wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt
 
 
-# Correct & Modify ( syntax for compatibility with GNU and Mac sed):
-sed -i.bak -e "/::/d" domains.txt hostnames.txt
-sed -i.bak -e "s/0.0.0.0/$cible/g" domains.txt hostnames.txt
+# Correct & Modify in case you don't use the files as they are::
+if [[ $cible != "0.0.0.0" ]]
+then
+        sed -i.bak -e "/::/d" domains.txt hostnames.txt
+        sed -i.bak -e "s/0.0.0.0/$cible/g" domains.txt hostnames.txt
+fi
 
 # Whitelist of some domains:
 for domain in `cat whitelist` ; do sed -i.bak "/$domain/d" *.txt ; done
