@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cible=192.168.0.1
+# If you have a pixelserv server u want to redirect the ads to, define the ip of the server:
+# Default is 0.0.0.0
+cible=0.0.0.0
 
 #
 # Download the list of domains and the list of hostnames maintained by 
