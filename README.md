@@ -23,12 +23,9 @@ What I suggest:
 4. It would be nice to schedule a daily download of the 2 files to be up-to-date with the adblock lists.
 5. Also I combine this dns-adblock with a pixelserv-tls server ( see my other repo on docker hub). 
 
-I created a simple bash script that download the lists, modify it to redirect to a specific ip, and use my whitelist and my own blacklist. See update_dnsmasq_adblock_V2.sh in the GitHub repository.
-
-
 
 # Infos:
-* I created a simple bash script that download the lists, modify them to redirect to a specific ip, and use my whitelist and my own blacklist. See update_dnsmasq_adblock_V2.sh in the GitHub repository.
+* I created a simple bash script that download the lists, modify them to redirect to a specific ip, and use my whitelist and my own blacklist. See update_dnsmasq_adblock.sh in the GitHub repository.
 * To see logs: `docker container logs -f dns-adblock `
 * To run the docker on MacOS:
 ``docker run -d --name dns-adblock --cap-add=NET_ADMIN -p 53:53/udp -v ~/adblock:/adblock -e TZ=`ls -la /etc/localtime | cut -d/ -f8-9` trickyboy/dnsmasq-adblock``
