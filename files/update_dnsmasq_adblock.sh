@@ -28,6 +28,6 @@ for domain in `cat whitelist` ; do sed -i.bak "/$domain/d" *.txt ; done
 for domain in `cat myadd` ; do echo "address=/$domain/$cible" >> domains.txt ; done
 
 # Restart the docker
-echo "Restarting qdblock-dnsmasq..."
+echo "Restarting adblock-dnsmasq..."
 docker container restart dns-adblock
 
