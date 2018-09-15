@@ -8,7 +8,7 @@ cible=0.0.0.0
 # Download the list of domains and the list of hostnames maintained by 
 # https://github.com/notracking/hosts-blocklists
 #
-echo "Applying some corrections to the lists...
+echo "Applying some corrections to the lists..."
 rm -rf domains.txt hostnames.txt
 wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt
 wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt
