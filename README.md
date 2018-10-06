@@ -2,6 +2,7 @@
 
 
 There are 2 lists.
+
 `/adblock/hostnames.txt` which is a list of hostnames to blacklist
 
 `/adblock/domains.txt` which is a list of domains to blacklist
