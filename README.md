@@ -1,7 +1,7 @@
 # docker-dnsmasq-adblock
 
 
-There are 2 lists.\s\s
+There are 2 lists. \s\s
 `/adblock/hostnames.txt` which is a list of hostnames to blacklist
 
 `/adblock/domains.txt` which is a list of domains to blacklist
