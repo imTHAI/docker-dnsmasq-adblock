@@ -5,7 +5,7 @@ There are 2 lists.
 `/adblock/hostnames.txt` which is a list of hostnames to blacklist.  
 `/adblock/domains.txt` which is a list of domains to blacklist
 
-The dns server will read them to redirect all the domains and hostnames to a fake ip.
+The dns server will read them to redirect all the domains and hostnames to a fake ip.  
 `conf-file=/adblock/domains.txt`
 `addn-hosts=/adblock/hostnames.txt`
 
@@ -15,7 +15,7 @@ Personally I use the list from https://github.com/notracking/hosts-blocklists
 This list is daily updated and pretty complete.
 What I suggest:
 1. Create a dedicated folder on the host ( i.e. ~/adblock )
-2. Download the 2 lists from the notracking's repository. 
+2. Download the 2 lists from the notracking's repository.  
 `cd ~/adblock`  
 `wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt`  
 `wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt`
