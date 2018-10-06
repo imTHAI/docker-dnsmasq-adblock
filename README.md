@@ -9,7 +9,7 @@ The dns server will read them to redirect all the domains and hostnames to a fak
 `conf-file=/adblock/domains.txt`  
 `addn-hosts=/adblock/hostnames.txt`
 
-Those files are empties in the image. 
+Those files are empty in the image. 
 
 Personally I use the list from https://github.com/notracking/hosts-blocklists
 This list is daily updated and pretty complete.
