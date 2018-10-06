@@ -6,7 +6,7 @@ There are 2 lists.
 `/adblock/domains.txt` which is a list of domains to blacklist
 
 The dns server will read them to redirect all the domains and hostnames to a fake ip.  
-`conf-file=/adblock/domains.txt`
+`conf-file=/adblock/domains.txt`  
 `addn-hosts=/adblock/hostnames.txt`
 
 Those files are empties in the image. 
