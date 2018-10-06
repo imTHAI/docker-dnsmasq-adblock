@@ -14,4 +14,4 @@ VOLUME /adblock
 
 EXPOSE 53/tcp 53/udp
 
-ENTRYPOINT ["dnsmasq", "-k", "-u", "root","--log-facility=-"]
+ENTRYPOINT ["dnsmasq"]
