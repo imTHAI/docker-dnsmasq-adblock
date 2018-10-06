@@ -2,7 +2,7 @@
 
 
 There are 2 lists.  
-`/adblock/hostnames.txt` which is a list of hostnames to blacklist. 
+`/adblock/hostnames.txt` which is a list of hostnames to blacklist.  
 `/adblock/domains.txt` which is a list of domains to blacklist
 
 The dns server will read them to redirect all the domains and hostnames to a fake ip.
