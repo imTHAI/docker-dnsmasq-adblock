@@ -13,6 +13,8 @@ rm -rf domains.txt hostnames.txt
 wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt
 wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt
 
+# For security, if downloads failed:
+touch domains.txt hostnames.txt
 
 # Correct & Modify in case you don't use the files as they are::
 if [[ $cible != "0.0.0.0" ]]
