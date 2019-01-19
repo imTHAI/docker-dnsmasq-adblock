@@ -1,6 +1,6 @@
 FROM alpine:edge
 LABEL maintainer="imTHAI <imTHAI@leet.la>"
-LABEL description="dnsmasq + adblock list under Alpine"
+LABEL description="dnsmasq + adblock list under Alpine (Edge branch)"
 
 RUN 	apk --update upgrade \
 	&& apk add --no-cache dnsmasq tzdata \
