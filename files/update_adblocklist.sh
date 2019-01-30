@@ -24,9 +24,13 @@ then
 fi
 
 # Whitelist of some domains:
-for domain in `cat whitelist` ; do sed -i.bak "/$domain/d" *.txt ; done
+for host in `cat whitelist`
+do
+domain=$(echo $host | sed "s/.*\.\(.*\..*\)$/\1/")
+sed -i.bak "/$domain/d" *.txt
+done
 
-# Add some domains
+# Add my own blacklist:
 for domain in `cat myadd` ; do echo "address=/$domain/$cible" >> domains.txt ; done
 
 # Restart the docker
