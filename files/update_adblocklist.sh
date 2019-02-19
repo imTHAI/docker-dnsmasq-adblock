@@ -9,8 +9,8 @@ cible=0.0.0.0
 # Download the list of domains and the list of hostnames maintained by 
 # https://github.com/notracking/hosts-blocklists
 #
-wget -q https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt -O hostnames.txt
-wget -q https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt -O domains.txt
+curl -Os https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt
+curl -Os https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt
 
 # Remove ipv6 stuff
 sed -i.bak -e "/::/d" domains.txt hostnames.txt
