@@ -27,6 +27,6 @@ What I suggest:
 
 # Infos:
 * I created a simple bash script that download the lists, modify them to redirect to a specific ip, and use my whitelist and my own blacklist. See update_adblocklist.sh in this GitHub repository.
-* To see logs:  `docker container logs -f dns-adblock `
+* To see logs:  `docker container logs -f --tail 100 dns-adblock `
 * To run the docker on MacOS:
 ``docker run -d --name dns-adblock --cap-add=NET_ADMIN -p 53:53/udp -v ~/adblock:/adblock -e TZ=`ls -la /etc/localtime | cut -d/ -f8-9` imthai/dnsmasq-adblock``
