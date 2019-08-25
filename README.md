@@ -19,8 +19,8 @@ What I suggest:
 `cd ~/adblock`  
 `wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt`  
 `wget https://raw.githubusercontent.com/notracking/hosts-blocklists/master/domains.txt`
-3. Run the container:  
-`docker run -d --name dns-adblock --cap-add=NET_ADMIN -p 53:53/udp -v ~/adblock:/adblock -v /etc/localtime:/etc/localtime docker imthai/dnsmasq-adblock`
+3. Run the container (on a linux host):  
+`docker run -d --name dns-adblock --net=host --cap-add=NET_ADMIN  -e TZ=Europe/Paris -v ~/adblock:/adblock docker imthai/dnsmasq-adblock`
 4. It would be a good idea to schedule a daily download of the 2 files to keep the adblock list up-to-date.
 5. Also I combine this dns-adblock with a pixelserv-tls server ( see my other repo on docker hub). 
 
